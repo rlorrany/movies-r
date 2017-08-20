@@ -18,8 +18,6 @@ setkey(movie_review, id)
 set.seed(2016L)
 
 
-
-
 ## ------------------------------------------------------------------------
 all_ids = movie_review$id
 train_ids = sample(all_ids, 4000)o
@@ -34,7 +32,7 @@ movie_resposta=movie_review[,c("id","resposta")]
 
 
 ## ------------------------------------------------------------------------
-#limpeza
+# limpeza
 limpeza_docs <- function (docs) {
   
   stop_words = c("i", "me", "my", "myself", "we", "our", "ours", "ourselves", "you", "your", "yours")
